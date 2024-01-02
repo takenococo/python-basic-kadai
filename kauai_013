@@ -1,0 +1,21 @@
+def calculate_total_price(product_price, tax_rate=0.1):
+    """
+    商品の金額と消費税を考慮した計算を行う関数
+
+    Parameters:
+    - product_price (float): 商品の金額
+    - tax_rate (float): 消費税率（デフォルトは10%）
+
+    Returns:
+    - float: 商品の金額に消費税を加えた合計金額
+    """
+    total_price = product_price * (1 + tax_rate)
+    return total_price
+
+# 例として、商品の金額が1000円の場合の計算
+product_price = 1000
+total_price = calculate_total_price(product_price)
+
+# 結果の表示
+print(f"商品の金額: {product_price}円")
+print(f"消費税込みの合計金額: {total_price}円")
