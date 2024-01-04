@@ -1,10 +1,12 @@
-list = ["水", "金", "地", "火", "木", "土", "天", "海", "冥"]
+list = ["水","金","地","火","木","土","天","海","冥"]
+for d in list:
+  print(d)
 
-# カウンターを初期化
-counter = 0
 
-# リストの中身を2回繰り返して表示
-while counter < 2:
-    for element in list:
-        print(element)
-    counter += 1
+# インデックスを初期化
+index = 0
+
+# リストの中身を1つずつ表示
+while index < len(list):
+    print(list[index])
+    index += 1
